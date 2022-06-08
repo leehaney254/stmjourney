@@ -1,0 +1,14 @@
+16:35:40 **** Build of configuration Debug for project 4. gpio_input ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -DSTM32F411xE -c -I../Inc -I"C:/Users/LEEHANEY/Desktop/stm/chip_headers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/LEEHANEY/Desktop/stm/chip_headers/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "4. gpio_input.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\LEEHANEY\Desktop\stm\f401\4. gpio_input\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="4. gpio_input.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 4. gpio_input.elf
+ 
+arm-none-eabi-size   4.\ gpio_input.elf 
+arm-none-eabi-objdump -h -S  4.\ gpio_input.elf  > "4. gpio_input.list"
+   text	   data	    bss	    dec	    hex	filename
+    772	      8	   1568	   2348	    92c	4. gpio_input.elf
+Finished building: default.size.stdout
+ 
+Finished building: 4. gpio_input.list
+ 

@@ -1,0 +1,10 @@
+15:50:21 **** Incremental Build of configuration Debug for project 0. led_toogle_addr ****
+make -j4 all 
+arm-none-eabi-size   0.\ led_toogle_addr.elf 
+   text	   data	    bss	    dec	    hex	filename
+    744	      8	   1568	   2320	    910	0. led_toogle_addr.elf
+Finished building: default.size.stdout
+ 
+
+15:50:22 Build Finished. 0 errors, 0 warnings. (took 341ms)
+

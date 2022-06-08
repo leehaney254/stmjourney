@@ -1,0 +1,17 @@
+11:25:49 **** Incremental Build of configuration Debug for project 1. led_toogle_addr2_struct ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F401CCUx -DSTM32 -DSTM32F4 -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "1. led_toogle_addr2_struct.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\LEEHANEY\Desktop\stm\f401\1. led_toogle_addr2_struct\STM32F401CCUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1. led_toogle_addr2_struct.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 1. led_toogle_addr2_struct.elf
+ 
+arm-none-eabi-size   1.\ led_toogle_addr2_struct.elf 
+arm-none-eabi-objdump -h -S  1.\ led_toogle_addr2_struct.elf  > "1. led_toogle_addr2_struct.list"
+   text	   data	    bss	    dec	    hex	filename
+    736	      8	   1568	   2312	    908	1. led_toogle_addr2_struct.elf
+Finished building: default.size.stdout
+ 
+Finished building: 1. led_toogle_addr2_struct.list
+ 
+
+11:25:50 Build Finished. 0 errors, 0 warnings. (took 1s.63ms)
+

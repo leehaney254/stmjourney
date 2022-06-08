@@ -1,0 +1,14 @@
+#include "stm32f4xx.h"
+
+#define GPIOAEN					(1U<<0)
+#define UART2EN					(1U<<0)
+
+int main(void)
+{
+
+
+	while(1)
+	{
+
+	}
+}
